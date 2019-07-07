@@ -111,6 +111,17 @@ And a static webpage is defined here:
 Run the `runTemplateServer` Gradle task. By default, it connects to the node with RPC address `localhost:10006` with 
 the username `user1` and the password `test`, and serves the webserver on port `localhost:10050`.
 
+```bash
+
+cd /Users/reza/projects/corda-yo-app/clients
+
+gradle runTemplateServer    # for starting web server and api (via internet)
+
+gradle runTemplateClient    # for running client rpc (on the node)
+
+```
+
+
 ##### Via IntelliJ
 
 Run the `Run Template Server` run configuration. By default, it connects to the node with RPC address `localhost:10006` 
@@ -126,6 +137,9 @@ While the sole template endpoint is served on:
 
     http://localhost:10050/templateendpoint
     
+
+
+
 # Extending the template
 
 You should extend this template as follows:
